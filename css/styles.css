@@ -1,3 +1,212 @@
-.h1 {
-    color: beige;
+/* esto es un comment */
+/* el asterisco significa que a todos los textos les agrego esos atributos */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container{
+    width: 85%;
+    height: 100vh;
+    z-index: 2;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.back{
+    background-image: url(../img/home\ image.svg);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+}
+
+header{
+    height: 100vh;
+    width: 15%;
+    padding: 10px;
+    background-color: rgb(158, 189, 163);
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0;
+}
+
+p{
+    color: #4e29b4;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+
+}
+
+h1{
+    color: #000000;
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 0px;
+
+}
+
+.center-vertical{
+    color:rgb(28, 6, 37);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center-horizontal{
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    margin: 0 30%;
+    padding: 20px 30px 15px;
+}
+.ftr-collections{
+    position: relative;
+}
+
+footer p{
+    display: inline-block;
+}
+
+footer img{
+    width: 15px;
+}
+
+.back-video{ 
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+}
+
+form input, form textarea{
+    display: block;
+    width: 100%;
+}
+
+.form{
+    width: 40%;
+}
+
+.checkbox{
+    display: inline;
+    width: auto;
+}
+
+nav{
+    margin-top: 50px;
+}
+
+.logotype{
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    font: size 1px; /* truco por el uso de inline-block*/
+ }
+ 
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.btn-collection {
+    width: 150px;
+    border: 5px solid green;
+    padding: 15px;
+    margin: 7px;
+    background:#444;
+  }
+
+.index-form {
+    background:#444;
+}
+
+@media only screen and (max-device-width: 480px) {
+    div#wrapper {
+        width: 400px;
+    }
+
+    div#header {
+        background-image: url();
+        height: 93px;
+        position: relative;
+    }
+
+    div#header h1 {
+        font-size: 140%;
+    }
+
+    #content {
+        float: none;
+        width: 100%;
+    }
+
+    #navigation {
+        float:none;
+        width: auto;
+    }
 }

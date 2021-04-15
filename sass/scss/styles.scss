@@ -1,0 +1,59 @@
+$color-primary:pink;
+$color-text-primary: darkmagenta;
+
+.navbar {
+    padding: 0;
+
+}
+nav {
+    .container-fluid {
+        background-color: $color-primary;
+
+    .header_logo {
+        width: 100px;
+    }
+
+    }
+    .btn-outline-success {
+        color: $color-text-primary;
+        border-color: $color-text-primary;
+    }
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+
+    .card {
+        margin: 50px 20px;
+        
+        .btn-primary {
+           background-color: $color-primary;
+           border-color: $color-primary;
+           color: $color-text-primary;
+        }
+    }
+} 
+
+.form_container {
+    width: 70%;
+    margin: 0 auto;
+
+    .btn-primary {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        color:$color-text-primary;
+        width: 100%;
+     }
+    
+
+}
